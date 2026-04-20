@@ -36,7 +36,7 @@ class gestorPartida:
                     j.esta_vivo=False
                     return "El pueblo ha linchado a " + NombreVotado + " en la hoguera."
         return "Nadie fue linchado."    
-        
+    
 
     def ComprobarVictoria(self):  
         
