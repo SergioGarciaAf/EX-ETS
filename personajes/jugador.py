@@ -2,6 +2,8 @@ class Jugador:
     rol: str = "desconocido"
 
     def __init__(self, nombre):
+        """Args:
+        nombre(str):el nombre"""
         self.nombre = nombre
         self.esta_vivo = True
 
