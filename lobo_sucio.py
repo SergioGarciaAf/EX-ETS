@@ -1,5 +1,4 @@
-import os  
-import sys
+
 
 class jugador_del_juego:  
     def __init__(self, nombre, Rol): 
@@ -7,7 +6,6 @@ class jugador_del_juego:
         self.rol=Rol 
         self.esta_vivo=True
         
-        variable_inutil = "esto no sirve para nada"  
     def AccionNocturna(self, objetivo=None):  
         if not self.esta_vivo:
             return f"{self.Nombre} está muerto."
@@ -34,7 +32,7 @@ class gestorPartida:
     def VotacionDia(self, NombreVotado):
         for j in self.jugadores:
             if j.Nombre == NombreVotado:
-                if j.esta_vivo == True:
+                if j.esta_vivo:
                     j.esta_vivo=False
                     return "El pueblo ha linchado a " + NombreVotado + " en la hoguera."
         return "Nadie fue linchado."    
