@@ -1,4 +1,5 @@
 from jugador import Jugador
+
 class Aldeano(Jugador):
     rol = "aldeano"
 
